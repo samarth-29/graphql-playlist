@@ -11,7 +11,7 @@ const app  = express();
 //allow cross origin requests
 app.use(cors());
 //connect to mlab databse
-mongoose.connect('mongodb://samarth:test123@ds251002.mlab.com:51002/gql-samarth')
+mongoose.connect('mongodb://samarth:samarth29@ds251002.mlab.com:51002/gql-samarth')
 mongoose.connection.once('open', () => {
 	console.log('connected to database');
 });
